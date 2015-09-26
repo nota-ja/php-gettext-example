@@ -3,7 +3,7 @@
 $language = 'en_US';
 
 putenv('LANG=' . $language);
-setlocale(LC_ALL, $language);
+setlocale(LC_MESSAGES, $language);
 
 // Set the text domain as 'messages'
 $domain = 'messages';
