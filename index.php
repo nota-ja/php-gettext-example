@@ -10,6 +10,7 @@ $domain = 'messages';
 $localedir = dirname(__FILE__) . '/locale';
 echo $localedir . ': ';
 bindtextdomain($domain, $localedir);
+bind_textdomain_codeset($domain, 'UTF-8');
 textdomain($domain);
 
 echo gettext('hello-world') . '<br/>';
